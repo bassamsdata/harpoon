@@ -223,8 +223,8 @@ function M.location_window(options)
         style = "minimal",
         width = 30,
         height = 15,
-        row = HarpoonConfig.global_settings.window_row,
-        col = HarpoonConfig.global_settings.window_col,
+        row = 0,
+        col = 0,
     }
     options = vim.tbl_extend("keep", options, default_options)
 
