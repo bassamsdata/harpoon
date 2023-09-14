@@ -218,12 +218,14 @@ function M.nav_file(id)
 end
 
 function M.location_window(options)
+    -- Get the screen height
+    local screen_height = vim.api.nvim_get_option("lines")
     local default_options = {
         relative = "editor",
         style = "minimal",
         width = 30,
         height = 15,
-        row = 0,
+        row = screen_height - 15, -- Adjust this value based on the height of the window
         col = 0,
     }
     options = vim.tbl_extend("keep", options, default_options)
