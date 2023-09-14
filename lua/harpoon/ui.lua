@@ -225,8 +225,8 @@ function M.location_window(options)
         style = "minimal",
         width = 30,
         height = 15,
-        row = screen_height - 15, -- Adjust this value based on the height of the window
-        col = 0,
+        row = 4,
+        col = 4,
     }
     options = vim.tbl_extend("keep", options, default_options)
 
