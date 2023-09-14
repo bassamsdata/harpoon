@@ -225,8 +225,8 @@ function M.location_window(options)
         style = "minimal",
         width = 30,
         height = 15,
-        row = 4,
-        col = 4,
+        row = 0,
+        col = 0,
     }
     options = vim.tbl_extend("keep", options, default_options)
 
